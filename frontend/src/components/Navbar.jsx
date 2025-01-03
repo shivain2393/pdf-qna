@@ -6,7 +6,7 @@ import { FaRegFilePdf } from "react-icons/fa6"; // Importing PDF icon
 import { AiOutlineLoading3Quarters } from "react-icons/ai"; // Importing loading spinner icon
 import Button from './Button'; // Importing Button component
 
-backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
+const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
 
 const Navbar = () => {
 

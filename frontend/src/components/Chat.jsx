@@ -4,7 +4,7 @@ import Button from './Button'; // Importing Button component
 import { usePdfStore } from '../hooks/usePdfStore'; // Importing custom hook for managing the PDF state
 import { AiOutlineLoading3Quarters } from "react-icons/ai"; // Importing the loading spinner icon
 
-backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
+const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
 
 const Chat = () => {
     const { pdf } = usePdfStore(); // Accessing the PDF filename from the global store
