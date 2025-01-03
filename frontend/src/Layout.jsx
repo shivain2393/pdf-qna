@@ -1,4 +1,3 @@
-import Footer from "./components/Footer"; // Import the Footer component, which will be displayed at the bottom of the layout
 import Navbar from "./components/Navbar"; // Import the Navbar component, which will be displayed at the top of the layout
 import { ToastContainer } from 'react-toastify'; // Import ToastContainer to show toast notifications in the app
 
@@ -21,8 +20,6 @@ const Layout = ({ children }) => {
                 autoClose={5000} // Time duration for the toast to automatically close
             />
             
-            {/* Footer will be displayed at the bottom of the page */}
-            <Footer />
         </div>
     )
 }
