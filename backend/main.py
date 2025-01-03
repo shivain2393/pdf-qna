@@ -8,14 +8,16 @@ from llama_index.core import VectorStoreIndex, Document
 from llama_index.core import StorageContext, load_index_from_storage
 from llama_index.core.text_splitter import TokenTextSplitter
 from config import UPLOAD_DIR, INDEX_DIR, max_tokens, embed_model, qa_pipeline, tokenizer
+import os
 
 # Initialize FastAPI application
 app = FastAPI()
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:5173")
 
 # CORS Middleware allows communication between frontend and backend (for local development in this case)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Frontend origin that is allowed to access the API
+    allow_origins=[frontend_url],  # Frontend origin that is allowed to access the API
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
     allow_headers=["*"],  # Allow all headers

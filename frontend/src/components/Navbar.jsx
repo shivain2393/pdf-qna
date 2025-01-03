@@ -6,6 +6,8 @@ import { FaRegFilePdf } from "react-icons/fa6"; // Importing PDF icon
 import { AiOutlineLoading3Quarters } from "react-icons/ai"; // Importing loading spinner icon
 import Button from './Button'; // Importing Button component
 
+backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
+
 const Navbar = () => {
 
     const inputFileRef = useRef(null); // Reference to the file input element
@@ -22,7 +24,7 @@ const Navbar = () => {
 
             try {
                 setUploading(true); // Set uploading state to true while the file is being uploaded
-                const response = await fetch("http://localhost:8000/upload/", { // Send the file to the backend API
+                const response = await fetch(`${backendUrl}/upload/`, { // Send the file to the backend API
                     method: "POST", // POST method to upload the file
                     body: formData, // The FormData with the file to be uploaded
                 });
