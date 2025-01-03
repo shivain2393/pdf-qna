@@ -75,10 +75,8 @@ The backend is responsible for processing PDF uploads, extracting text from the 
 /project-root
 ├── /backend (FastAPI)
 │   ├── /app
-│   │   ├── main.py # Main FastAPI application
-│   │   ├── api.py # API routes (upload and ask endpoints)
-│   │   ├── models.py # Data models
-│   │   └── utils.py # Helper functions (e.g., PDF processing)
+│   │   ├── main.py # Main FastAPI application with API Routes, Processing Code
+│   │   ├── config.py #Configuration details like Uploads directory, Index directory, models
 │   └── requirements.txt # Python dependencies
 ├── /frontend (React)
 │   ├── /src
@@ -86,7 +84,6 @@ The backend is responsible for processing PDF uploads, extracting text from the 
 │   │   │   ├── Button.js # Reusable button component
 │   │   │   ├── Chat.js # Chat interface component
 │   │   │   ├── Navbar.js # Navbar with file upload functionality
-│   │   │   └── Footer.js # Footer component
 │   │   ├── App.js # Main entry point of the React app
 │   │   ├── Layout.js # Layout wrapping the main content
 │   │   └── index.js # ReactDOM rendering
