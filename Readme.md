@@ -206,5 +206,5 @@ The backend is responsible for processing PDF uploads, extracting text from the 
     ```
     The backend API should now be running at `http://localhost:8000.`
 
-### **Conclusion**
+## Conclusion
 This project demonstrates an AI-powered system for interacting with PDF content using a conversational interface. It leverages FastAPI for handling the backend logic and React for a dynamic and user-friendly frontend. Users can upload PDF files, ask questions about the content, and receive AI-generated answers in real-time.
