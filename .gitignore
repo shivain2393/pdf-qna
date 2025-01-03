@@ -1,0 +1,77 @@
+# Node.js / React
+
+# Dependencies
+/node_modules/
+
+# Build output
+/build/
+# Next.js build output (if using Next.js)
+/.next/
+
+# Log files
+*.log
+
+# Dependency directories
+/.pnp/
+.pnp.js
+
+# Testing
+/coverage/
+
+# Production
+/dist/
+
+# dotenv environment variables file
+.env
+
+# Vercel deployment directories
+/.vercel/
+
+# IDEs / Editors
+
+# VSCode
+.vscode/
+
+# JetBrains
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# FastAPI and other generated files
+*.db
+*.sqlite3
+*.log
+
+# Coverage reports
+.coverage
+*.cover
+
+# FastAPI app file uploads (or other sensitive data)
+indexes/
+uploads/
+
+# AI models (if saved locally)
+model/
+
+# Other
+*.bak
+*.swp
